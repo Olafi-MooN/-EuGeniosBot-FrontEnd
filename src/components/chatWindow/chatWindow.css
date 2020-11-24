@@ -1,0 +1,109 @@
+.chatWindow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatWindow .chatWindowHeader{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-left-top);
+    height: 10vh;
+    min-height: 65px;
+    padding: 10px;
+}
+
+.chatWindow .chatWindowHeader .headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.chatWindow .chatWindowHeader .headerLeft img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.chatWindow .chatWindowHeader .headerLeft .infoTop {
+    padding-left: 20px;
+}
+
+.chatWindow .chatWindowHeader .headerLeft .infoTop h1 {
+    color: #fff;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.chatWindow .chatWindowHeader .headerLeft .infoTop p {
+    color: #00ff15;
+}
+
+.chatWindow .chatWindowBody {
+    overflow-y: auto;
+    flex: 1;
+    background-color: #350050;
+    background-image: url('https://i.pinimg.com/originals/e9/f4/ea/e9f4ea5b670fe8235dee75dbbf098737.png');
+    background-size: max(300px, 10vw);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px 30px;
+}
+
+.chatWindowBody::-webkit-scrollbar {
+    width: 6px;
+    height: 50px;
+}
+
+.chatWindowBody::-webkit-scrollbar-thumb {
+    background-color: #b1b3b580;
+    border-radius: 3px;
+}
+
+.chatWindow .chatWindowFooter {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 62px;
+}
+
+.chatWindow .chatWindowFooter .footerZoneOne svg{
+    margin: 0 8px; 
+    cursor: pointer;
+}
+
+.chatWindow .chatWindowFooter .footerZoneTwo {
+    width: 80%
+}
+
+.chatWindow .chatWindowFooter .footerZoneTwo input {
+    outline: none;
+    background-color: var(--background-search-bar);
+    padding: 9px 12px 11px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    color: var(--background-font-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    height: 100%;
+}
+
+.chatWindow .chatWindowFooter .footerZoneThree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatWindow .chatWindowFooter .footerZoneThree svg {
+    cursor: pointer;
+
+}

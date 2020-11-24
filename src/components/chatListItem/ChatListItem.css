@@ -1,0 +1,65 @@
+.list {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-list-users);
+    height: 72px;
+    cursor: pointer;
+}
+
+.list:hover {
+    background-color: hsla(0,0%,100%,.16);
+}
+
+
+.list.active {
+    background-color: hsla(0,0%,100%,.16);
+}
+
+.list .imagem {
+    padding-left: 14px;
+    padding-right: 13px;
+}
+
+.list .imagem img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.list .center {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 2px solid var(--border-default);
+    height: 100%;
+}
+
+.list .name-user h1{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.list .message p {
+    color: #fff;
+    max-width: 34ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list .hour {
+    color: #fff;
+    height: 100%;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--border-default);
+    padding-right: 20px;
+    font-size: 0.9rem;
+}

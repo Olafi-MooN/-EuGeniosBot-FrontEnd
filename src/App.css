@@ -1,0 +1,121 @@
+:root {
+    --background-left: #131c21;
+    --background-list-users: #131c21;
+    --background-left-top:#2a2f32;
+    --background-right: #262d31;
+    --background-icons: #b1b3b5;
+    --background-search-bar: #323739;
+    --background-font-color: #b1b3b5;
+    --border-default: #242d32;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-right);
+}
+
+.container .ctn-left {
+    display: flex;
+    width: 35%;
+    background-color: var(--background-list-users);
+    flex-direction: column;
+    border-right: 2px solid var(--border-default);
+}
+
+.container .ctn-left-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-left-top);
+    height: 10vh;
+    min-height: 65px;
+    padding: 10px;
+}
+
+.container .ctn-left-top img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .ctn-left .icons {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.container .ctn-left .icons .btn-icons{
+    padding: 8%;
+    cursor: pointer;
+}
+
+.container .ctn-left .search {
+    background-color: #131c21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    min-height: 49px;
+    max-height: 53px;
+    border-bottom: 2px solid var(--border-default); 
+}
+
+.container .ctn-left .search .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 80%;
+    height: 60%;
+    background-color: var(--background-search-bar);
+    border-radius: 30px;
+
+}
+
+.container .ctn-left .search .search-bar svg {
+    margin-left:  20px;
+}
+
+.container .ctn-left .search .search-bar input {
+    outline: none;
+    background-color: var(--background-search-bar);
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    color: var(--background-font-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.container .ctn-left .chatList {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.chatList::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.chatList::-webkit-scrollbar-thumb {
+    background-color: #b1b3b580;
+    border-radius: 3px;
+}
+
+.container .ctn-right {
+    width: 65%;
+    height: 100vh;
+}
