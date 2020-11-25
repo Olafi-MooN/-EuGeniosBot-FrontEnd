@@ -44,7 +44,7 @@ function App() {
         <div className="search">
           <div className="search-bar">
            <SearchIcon style={{ color: '#b1b3b5' }} />
-           <input id="search" type="search" placeholder="Procurar ou começar uma nova conversa" />
+           <input id="search" type="search" placeholder="Procurar ou começar uma nova conversa" autoComplete="off" />
           </div>
         </div>
         <div className="chatList">

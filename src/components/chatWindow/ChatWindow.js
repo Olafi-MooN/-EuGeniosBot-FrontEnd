@@ -63,8 +63,8 @@ const ChatWindow = ({ name, img, user }) => {
                     </div>
                 </div>
                 <div className="headerRight">
-                    <SearchIcon style={{ color: '#b1b3b5' }} />
-                    <MoreVertIcon style={{ color: '#b1b3b5' }} />
+                    <SearchIcon style={{ color: '#b1b3b5' }} onClick={() => alert('Ainda não esta disponível')} />
+                    <MoreVertIcon style={{ color: '#b1b3b5' }} onClick={() => alert('Ainda não esta disponível')} />
                 </div>
             </div>
             <div className="chatWindowBody">
